@@ -159,12 +159,13 @@ body{
   border-radius: 10px;
   border-color: white;
   vertical-align: middle;
-  padding-top: 7px;
+  padding-top: 0px;
   padding-left: 10px;
+  font-size: 18px;
 }
 
 .menu{
-  background-color: #3d99f5c7;
+  background-color: #06705b;
   width: 178px;
   display: none;
   margin: 0;
@@ -189,6 +190,7 @@ body{
 
 .label_menu  ul li a {
   text-decoration: none;
+  color: white;
 }
 
 .label_menu > svg {
@@ -199,9 +201,9 @@ body{
   width: 15%;
 }
 
-.label_menu  ul li a:visited{
-  color: white;
-}
+/* .label_menu  ul li a:visited{
+  color: rgb(215, 233, 215);
+} */
 
 .label_menu:hover,.label_menu > label:hover {
   cursor: pointer;  

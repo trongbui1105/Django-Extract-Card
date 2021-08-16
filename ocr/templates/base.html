@@ -98,16 +98,18 @@
         <script>
             function clearForm(data) {
                 for (var i = 0; i < data.length; i++){
-                    data[i].innerHTML = "";
+                    data[i].value = "";
                 }
             }
-        
+
             var data = document.getElementsByClassName("vls");
-            var error = document.getElementById("error");
             for (var i = 0; i < data.length; i++){
-                if(data[i].innerHTML == "None") {
-                    error.innerHTML = "Sai loại thẻ / Hình chất lượng thấp";
+                if(data[i].value == "None") {
+                    alert("Sai loại thẻ / Hình chất lượng thấp\nHãy chọn lại hình ảnh!");
                     clearForm(data);
+                    break;
+                } else {
+                    data[i].value = data[i].value.trim();
                 }
             }
         

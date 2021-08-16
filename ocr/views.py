@@ -290,4 +290,3 @@ class DrivingLicenseAPIView(APIView):
             os.remove(os.path.join(directory, f))
 
         return Response(get_data.data)
-        
